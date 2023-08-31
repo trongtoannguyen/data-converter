@@ -1,0 +1,296 @@
+CSS
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ======================================================================================== */
+body {
+    color: #40b412;
+    background-color: rgb(0 0 0 / 88%);
+}
+
+.inner {
+    max-width: 980px;
+    margin: auto;
+    background-color: #242424;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+header {
+    height: 60px;
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+main {
+    min-height: 960px;
+    padding: 30px 0;
+}
+
+.converter-form {
+    display: inline-flex;
+    width: 100%;
+}
+
+.converter-form div {
+    margin-bottom: 18px;
+}
+
+.units-group {
+    width: 40%;
+    min-width: 300px;
+    max-width: 380px;
+}
+
+.units-group input {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    height: 32px;
+    border: 0;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    margin-top: 8px;
+    padding: 0 1.3rem;
+}
+
+.button-group {
+    display: flex;
+    margin: 0 18px;
+    align-items: center;
+    padding-top: 18px;
+}
+
+.button-group button {
+    height: 2.5rem;
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: 0 8px;
+    font-size: inherit;
+    font-weight: 600;
+}
+
+.button-group button:hover {
+    background-color: rgb(20, 96, 24);
+    color: rgb(0, 0, 0);
+}
+
+.button-group button:active {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.data-select {
+    float: right;
+}
+
+.step-cal {
+    margin-top: 30px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-top: 12px;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+.panel textarea {
+    min-width: 100%;
+    max-width: 100%;
+    resize: vertical;
+}
+
+.fn-label {
+    text-transform: uppercase;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    display: none;
+}
+
+
+@media screen and (max-width: 780px) {
+    .converter-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+footer {
+    background-color: rgb(0 0 0 / 20%) !important;
+    padding: 20px 30px;
+    padding-top: 20px;
+    height: 80px;
+    color: white;
+    line-height: 130%;
+}
+
+footer a {
+    color: white;
+}
